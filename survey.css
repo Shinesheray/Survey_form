@@ -11,10 +11,18 @@ body {
   margin: 0;
 }
 
+h1 {
+  margin-bottom: 0;
+}
+
+h1 + p {
+  margin-top: 0;
+}
+
 form {
   background-color: #fff;
-  max-width: 450px;
-  margin: 0 auto;
+  max-width: 500px;
+  margin: 40px auto;
   box-shadow: 2px 5px 10px rgb(0, 0, 0, 0.4);
   border-radius: 25px;
   padding: 30px 20px
@@ -30,7 +38,7 @@ form {
   margin-bottom: 6px;
 }
 
-.form-control input {
+.form-control input, .form-control select, .form-control textarea {
  display: block;
  width: 100%;
   padding: 5px;
@@ -38,4 +46,22 @@ form {
   border: 1px solid #111;
   font-size: 16px;
   font-family: inherit;
+}
+
+.form-control input[type="radio"], .form-control input[type="checkbox"] {
+  width: auto;
+  display: inline-block;
+  
+}
+
+button {
+ background-color: #FFFF99; 
+ width: 100%;
+ display: block;
+ padding: 10px;
+ border-radius: 10px;
+  border: 1px solid #FFFF99;
+  font-family: inherit;
+  font-size: 16px;
+  
 }
