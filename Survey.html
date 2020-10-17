@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <h1 id="title">DDB Survey Form</h1>
+    
+    <p id="description"><i>Thank you for taking the time to help inprove the adverstising industry</p></i>
+    
+    <form id="survey-form">
+      
+      <div class="form-control">
+      <label for="name" id="name-label">Name</label>
+      <input id="name" type="text" name="name" placeholder="Enter your name" required/>
+      </div>
+      
+    <div class="form-control">
+      <label for="email" id="email-label">Email</label>
+      <input id="email" type="email" name="email" placeholder="Enter your email" required />
+      </div>
+    
+    <div class="form-control">
+      <label for="age" id="number-label">Age</label>
+      <input id="number" type="number" name="number" placeholder="Enter your Age" required min="0" max="200"/>
+      </div>
+    
+      <div class="form-control">
+      <label for="role">Which option best describes your current role?</label>
+        <select name="role" id="dropdown">
+          
+        <option disabled selected value>Select current role</option>
+          
+          <option value="intern">Intern</option>
+          <option value="creative">Creative</option>
+          <option value="account-mangement">Account mangement</option>
+          <option value="designer">Designer</option>
+          <option value="strat">Strat</option>
+          <option value="copy-writter">Copy Writter</option>
+          <option value="production">Productionr</option>
+          <option value="other">Other</option>
+        </Select>
+      </div>
+      
+     <div class="form-control">
+       <label>Would you recommend DDB to your friends?</label>
+    
+    <label for="recommend-1"><input type="radio" id="recommend-1" name="recommend"  value="definitely"/>Definitely</label>
+    
+    <label for="recommend-2"><input type="radio" id="recommend-2" name="recommend"  value="maybe"/>Maybe</label>
+    
+    <label for="recommend-3"><input type="radio" id="recommend-3" name="recommend"  value="not-sure"/>Not Sure</label>
+    </div>
+    
+    
+    <div class="form-control">
+      <label for="feature">What is your most favourite thing about DDB?</label>
+        <select name="feature" id="feature">
+          
+        <option disabled selected value>Select an option</option>
+          
+          <option value="free-drinks">Free drinks</option>
+          <option value="the-vibes">The Vibes</option>
+          <option value="the-people">The people</option>
+          <option value="culture">Culture</option>
+          <option value="clients">Clients</option>
+          <option value="the-production">The production</option>
+          <option value="the-free-food">The free food</option>
+          <option value="the-freedom-of-working">The freedom of working</option>
+        </Select>
+      </div>
+    
+    
+    
+    
+    <div class="form-control">
+      <label>What would you like to see improved? <small>(Check all that apply)</small></label>
+      
+     
+      <label for="improve-1"><input type="checkbox" name="improve" id="improve-1" value="improve-1"/>More internal projects</label>
+      <label for="improve-2"><input type="checkbox" name="improve" id="improve-2" value="improve-2"/>More community projects</label>
+      <label for="improve-3"><input type="checkbox" name="improve" id="improve-3" value="improve-3"/>Trip traning</label>
+      <label for="improve-4"><input type="checkbox" name="improve" id="improve-4" value="improve-4"/> Weekly Challenges</label>
+      <label for="improve-5"><input type="checkbox" name="improve" id="improve-5" value="improve-5"/>Open bar Thursdays and Fridays</label>
+      <label for="improve-6"><input type="checkbox" name="improve" id="improve-6" value="improve-6"/>Creative help rooms</label>
+      <label for="improve-7"><input type="checkbox" name="improve" id="improve-7" value="improve-7"/>Videos</label>
+      <label for="improve-8"><input type="checkbox" name="improve" id="improve-8" value="improve-8"/>Weekend Meetups</label>
+      <label for="improve-9"><input type="checkbox" name="improve" id="improve-9" value="improve-9"/>Learning hubs</label>
+      <label for="improve-10"><input type="checkbox" name="improve" id="improve-10" value="improve-10"/>Forum</label>
+      <label for="improve-11"><input type="checkbox" name="improve" id="improve-11" value="improve-11"/>Additional Courses</label>
+    </div>
+    
+    
+    
+    <div class="form-control">
+      <label for="comments">Any comments or suggestions?</label>
+      <textarea name="comments"  id="comments" placeholder="Enter your comment here..."></textarea>
+    </div>
+    
+    
+    <button type="submit" id="submit">Submit</button> 
+    
+    </form>
+    
+    
+
+  
+
+
+</body>
+</html>
